@@ -1,5 +1,4 @@
 lastpictures
 ============
 
-extension of old Mod Last Pictures by Micogian
-View on index the latest pictures attached
+extension of old Mod Last Pictures by Micogian: view on index the latest pictures attached
