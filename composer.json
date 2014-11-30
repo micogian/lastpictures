@@ -1,8 +1,8 @@
 {
     "name": "micogian/lastpictures",
     "type": "phpbb-extension",
-    "description": "Aggiunge un box nell'indice con gli ultimi allegati",
-    "homepage": "http://www.actafungorum.org",
+    "description": "Aggiunge una striscia fotografica nell'indice con le ultime immagini allegate",
+    "homepage": "http://http://www.giannidose.altervista.org/forum/index.php",
     "version": "0.1.0",
     "time": "2014-11-26",
     "license": "GPL-2.0",
@@ -10,7 +10,7 @@
         {
             "name": "Micogian",
             "email": "giannidose@tin.it",
-            "homepage": "http://www.phpbbitalia.net/",
+            "homepage": "http://http://www.giannidose.altervista.org/forum/index.php/",
             "role": "Developer"
         }
     ],
@@ -24,7 +24,7 @@
              "phpbb/phpbb": "3.1.*@dev"
         },
         "version-check": {
-            "host": "http://darkylab.altervista.org/forum",
+            "host": "http://http://www.giannidose.altervista.org/forum/index.php",
             "directory": "/",
             "filename": "composer.json"
         }
