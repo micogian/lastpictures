@@ -1,9 +1,9 @@
 {
     "name": "micogian/lastpictures",
     "type": "phpbb-extension",
-    "description": "Aggiunge un box fotografico nell'indice con gli ultimi allegati",
+    "description": "Mostra nell'indice del forum una Lista fotografica con gli ultimi allegati",
     "homepage": "https://github.com/micogian/lastpictures",
-    "version": "1.0.1",
+    "version": "1.0.0-DEV",
     "time": "2014-11-09",
     "license": "GPL-2.0",
     "authors": [
@@ -21,6 +21,11 @@
 		"display-name": "Last Pictures",
 		"soft-require": {
 			"phpbb/phpbb": "3.1.*@dev"
+		},
+		"version-check": {
+		"host": "www.giannidose.altervista.org",
+		"directory": "/version/",
+		"filename": "lastpictures.json"
 		}
 	}
 }
