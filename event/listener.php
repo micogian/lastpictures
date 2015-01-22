@@ -34,7 +34,7 @@ class listener implements EventSubscriberInterface
 		* function resize_thumbs() = crea una miniatura del file
 		* La function resize_thumbs() ridimensiona le immagini selezionate e le salva nella cartella thumbs
 		* La procedura quindi provvede a visualizzare le thumbs e non i file originali.
-		Nel caso di nuovo Topics, le thumbs vengono create al momento del primo accesso da parte di un visitatore
+		* Nel caso di nuovo Topics, le thumbs vengono create al momento del primo accesso da parte di un visitatore
 		* in modo che i successivi utenti trovano già disponibili le miniature.
 		*/
 		
@@ -56,7 +56,6 @@ class listener implements EventSubscriberInterface
 			imagejpeg($thumb, $img_des, 75);
 			return "thumbs/". $subfolder . "/" . $attach_id . ".jpg" ;
 		}
-		
 		/**
 		* IMPOSTAZIONI PRINCIPALI
 		* scegliere una delle due seguenti condizioni di ricerca: per parent_id o per forum_id
