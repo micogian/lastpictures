@@ -21,12 +21,12 @@
 
         $('.jcarousel-control-prev')
             .jcarouselControl({
-                target: '-=5'
+                target: '-=6'
             });
 
         $('.jcarousel-control-next')
             .jcarouselControl({
-                target: '+=5'
+                target: '+=6'
             });
 
         $('.jcarousel-pagination')

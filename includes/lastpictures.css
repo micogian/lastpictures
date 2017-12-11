@@ -1,0 +1,124 @@
+/* Menu lastpictures */
+/*
+.nav-pictures {
+    padding: 1px 10px;
+}
+ul.toptenlist {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+ul.toptenlist li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+
+ul.toptenlist dl {
+	position: relative;
+}
+
+ul.toptenlist li.row dl {
+	padding: 0; 
+}
+
+ul.toptenlist dt, ul.toptenlist dd {
+	display: block;
+	float: left;
+}
+
+ul.toptenlist dt {
+	width: 100%;
+	margin-right: -440px;
+	font-size: 1.1em;
+}
+
+ul.toptenlist dd {
+	border-left: 1px solid transparent;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+ul.linklist1 li.responsive-menu a.responsive-menu-link1{
+	display: inline-block;
+	margin: 0; /*0 5px;*/
+	/*font-size: 0.9em; 16px;++*/
+	/*position: relative;++*/
+	width: 50px; /*16px;*/
+	line-height: 1em;/* 20px;*/
+	text-decoration: none;
+}
+/*
+ul.linklist li.responsive-menu a.responsive-menu-link1{
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 16px;
+	position: relative;
+	width: 16px;
+	line-height: 20px;
+	text-decoration: none;
+}*/
+
+ul.linklist1 li.responsive-menu a.responsive-menu-link1:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px; /*7px;*/
+	height: .15em;
+	width: 16px; /*14px;*/
+	border-bottom: 0.25em solid transparent; /*0.125em solid transparent;*/
+	border-top: 0.60em double transparent; /*0.375em double transparent;*/
+}
+
+ul.linklist1 > li {
+	float: left;
+	font-size: 1.1em;
+	line-height: 1.3em; /*2.2em;*/
+	list-style-type: none;
+	/*margin-right: 7px;*/
+	padding-top: 1px;
+	width: auto;
+}
+.nav-pictures > a{
+	display: inline-block;
+	margin: 0; 
+	font-size: 1em;
+	position: relative;
+	/*width: 50px;*/
+	line-height: 1em;
+	text-decoration: none;
+}
+.nav-pictures > a:hover{
+	color: #102589;
+	text-decoration: none;
+}
+.link-pictures a{
+	font-size: 1em;
+	color: #59550C ! important;
+	text-decoration: none;
+}
+.link-pictures a:hover{
+	font-size: 1em;
+	color: #FF0000 !important;
+	text-decoration: none;
+}
+ul.linklist li.responsive-menu a.responsive-menu-link1:before {
+	border-color: #FFFFFF; /*#105289;*/
+}
+
+ul.linklist li.responsive-menu a.responsive-menu-link1:hover:before, ul.linklist li.responsive-menu.visible a.responsive-menu-link1:before {
+	border-color: #D31141;
+}
+.lastpictures-box{
+	display: inline-block;
+	width: 100%;
+}
+@media only screen and (max-width: 915px), only screen and (max-device-width: 915px)
+{
+	.lastpictures-box{
+		display: none;
+	}
+	
+}

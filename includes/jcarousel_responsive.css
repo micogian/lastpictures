@@ -1,7 +1,7 @@
 /* extension micogian_lastpictures */
 .wrap_carousel {
     max-width: 100%; /*620px;*/
-    padding: 0 10px 30px 10px;
+    padding: 0 10px 5px 10px;
     margin: auto;
 }
 
@@ -46,8 +46,8 @@
 
 .jcarousel img {
     display: block;
-    max-width: 100%;
-    height: auto !important;
+    max-width: 145px;
+    max-height: 110px; /*height: auto !important;*/
 }
 
 /** Carousel Controls **/
@@ -60,7 +60,7 @@
     width: 30px;
     height: 30px;
     text-align: center;
-    background: #4E443C;
+    background: #6A6F34; /*4E443C;*/
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
@@ -74,11 +74,11 @@
 }
 
 .jcarousel-control-prev {
-    left: 15px;
+    left: 2px;
 }
 
 .jcarousel-control-next {
-    right: 15px;
+    right: 2px;
 }
 
 /** Carousel Pagination **/
