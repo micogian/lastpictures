@@ -2,7 +2,7 @@
  * Name:    Highslide JS
  * Version: 4.1.13 (2011-10-06)
  * Config:  default +slideshow +positioning +transitions +viewport +thumbstrip
- * Author:  Torstein Hønsi
+ * Author:  Torstein HÃ¸nsi
  * Support: www.highslide.com/support
  * License: www.highslide.com/#license
  */
@@ -10,28 +10,27 @@ if (!hs) { var hs = {
 // Language strings
 lang : {
 	cssDirection: 'ltr',
-	loadingText : 'Loading...',
-	loadingTitle : 'Click per cancellare', /*'Click to cancel',*/
-	focusTitle : 'Click to bring to front',
-	fullExpandTitle : 'Espandi la dimensione attuale (f)', /*'Expand to actual size (f)',*/
-	creditsText : 'Powered by <i>Highslide JS</i>',
-	creditsTitle : 'Vai alla home page di Highslide JS',
-	previousText : 'Indietro', /* 'Previous',*/
-	nextText : 'Avanti', /*'Next', */
-	moveText : 'Sposta', /*'Move',*/
-	closeText : 'Chiudi', /*'Close', */
-	closeTitle : 'Chiudi (esc)', /*'Close (esc)', */
-	resizeTitle : 'Riduci', /*'Resize',*/
-	playText : 'Play',
-	playTitle : 'Play slideshow (spacebar)',
-	pauseText : 'Pausa',
-	pauseTitle : 'Pausa slideshow (spacebar)',
-	previousTitle : 'Indietro (freccia sx)', /*'Previous (arrow left)',*/
-	nextTitle : 'Avanti (freccia dx)', /*'Next (arrow right)',*/
-	moveTitle : 'Sposta', /*'Move',*/
-	fullExpandText : '1:1',
-	number: 'Immagine %1 of %2',
-	restoreTitle : 'Clicca per chiudere immagine, clicca e sposta per muovere, Usa frecce per avanti-indietro', /*'Click to close image, click and drag to move. Use arrow keys for next and previous.'*/
+	loadingText :     'In caricamento...',
+    loadingTitle :    'Clicca per annullare',
+	focusTitle :      'Clicca per portare in avanti',
+	fullExpandTitle : 'Espandi alla dimensione originale',
+	fullExpandText :  'Dimensione massima',
+	creditsText :     'Powered by <i>Highslide JS</i>',
+	creditsTitle :    'Vai alla homepage di Highslide JS',
+	previousText :    'Precedente',
+	previousTitle :   'Precedente (tasto sinistro)',
+	nextText :        'Prossimo',
+	nextTitle :       'Prossimo (tasto destro)',
+	moveTitle :       'Sposta',
+	moveText :        'Sposta',
+	closeText :       'Chiudi',
+	closeTitle :      'Chiudi (esc)',
+	resizeTitle :     'Ridimensiona',
+	playText :        'Avvia',
+	playTitle :       'Avvia slideshow (barra spaziatrice)',
+	pauseText :       'Pausa',
+	pauseTitle :      'Pausa slideshow (barra spaziatrice)',
+	restoreTitle :    'Clicca per chiudere l\'immagine, clicca e trascina per spostare. Usa i tasti prossimo e precedente.'
 },
 // See http://highslide.com/ref for examples of settings  
 graphicsDir : 'highslide/graphics/',
