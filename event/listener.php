@@ -1,7 +1,4 @@
 <?php
-/**
-Versione senza creazione thumbs
-*/
 namespace micogian\lastpictures\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
