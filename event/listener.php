@@ -143,22 +143,22 @@ class listener implements EventSubscriberInterface
 						}else{
 							$topic_title1 = $row2['topic_title'];
 						}
-						$last_topic_link[$n2]   		= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row2['forum_id'] . "&amp;t=" . $row2['topic_id']);
-						$last_topic_title[$n2]  		= $row2['topic_title'];
+						$last_topic_link[$n2]   	= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row2['forum_id'] . "&amp;t=" . $row2['topic_id']);
+						$last_topic_title[$n2]  	= $row2['topic_title'];
 						$last_topic_title_short[$n2]  	= $topic_title2;
-						$last_topic_forum[$n2]  		= $row2['forum_name'];
-						$last_topic_author[$n2] 		= $row2['topic_first_poster_name'];
-						$last_topic_data[$n2]   		= date("d/m/Y",$row2['topic_time']); 
+						$last_topic_forum[$n2]  	= $row2['forum_name'];
+						$last_topic_author[$n2] 	= $row2['topic_first_poster_name'];
+						$last_topic_data[$n2]   	= date("d/m/Y",$row2['topic_time']); 
 						
 						// assegna le variabili da passare al file HTML
 						$this->template->assign_block_vars('topten2_list', array(
-							'LAST_TOPIC_LINK'			=> $last_topic_link[$n2],
-							'LAST_TOPIC_TITLE'			=> $last_topic_title[$n2],
+							'LAST_TOPIC_LINK'		=> $last_topic_link[$n2],
+							'LAST_TOPIC_TITLE'		=> $last_topic_title[$n2],
 							'LAST_TOPIC_TITLE_SHORT'	=> $last_topic_title_short[$n2],
-							'LAST_TOPIC_FORUM'			=> $last_topic_forum[$n2],
-							'LAST_TOPIC_AUTHOR'			=> $last_topic_author[$n2],
-							'LAST_TOPIC_DATA'			=> $last_topic_data[$n2],
-							'LAST_TOPIC_BG'				=> $bg2 ,
+							'LAST_TOPIC_FORUM'		=> $last_topic_forum[$n2],
+							'LAST_TOPIC_AUTHOR'		=> $last_topic_author[$n2],
+							'LAST_TOPIC_DATA'		=> $last_topic_data[$n2],
+							'LAST_TOPIC_BG'			=> $bg2 ,
 						));
 						if ($bg2 == "bg1" ){
 							$bg2 = "bg2" ;
@@ -208,20 +208,20 @@ class listener implements EventSubscriberInterface
 						}
 						$last_post_link[$n3]		= append_sid("{$this->root_path}viewtopic.$this->phpEx", "f=" . $row3['forum_id'] . "&amp;t=" . $row3['topic_id'] . "#p" . $row3['topic_last_post_id']);
 						$last_post_title[$n3] 		= $row3['topic_last_post_subject'];
-						$last_post_title_short[$n3] = $post_title3;
+						$last_post_title_short[$n3] 	= $post_title3;
 						$last_post_forum[$n3]  		= $row3['forum_name'];
 						$last_post_author[$n3] 		= $row3['topic_last_poster_name'];
 						$last_post_data[$n3]   		= date("d/m/Y",$row3['topic_last_post_time']); 
 						
 						// assegna le variabili da passare al file HTML
 						$this->template->assign_block_vars('topten3_list', array(
-							'LAST_POST_LINK'			=> $last_post_link[$n3],
-							'LAST_POST_TITLE'			=> $last_post_title[$n3],
+							'LAST_POST_LINK'		=> $last_post_link[$n3],
+							'LAST_POST_TITLE'		=> $last_post_title[$n3],
 							'LAST_POST_TITLE_SHORT'		=> $last_post_title_short[$n3],
-							'LAST_POST_FORUM'			=> $last_post_forum[$n3],
-							'LAST_POST_AUTHOR'			=> $last_post_author[$n3],
-							'LAST_POST_DATA'			=> $last_post_data[$n3],
-							'LAST_POST_BG'				=> $bg3 ,
+							'LAST_POST_FORUM'		=> $last_post_forum[$n3],
+							'LAST_POST_AUTHOR'		=> $last_post_author[$n3],
+							'LAST_POST_DATA'		=> $last_post_data[$n3],
+							'LAST_POST_BG'			=> $bg3 ,
 						));
 						if ($bg3 == "bg1" ){
 							$bg3 = "bg2" ;
@@ -294,24 +294,24 @@ class listener implements EventSubscriberInterface
 						}else{
 							$topic_title4 = $row4['topic_title'];
 						}
-						$view_topic_time[$n4]  			= date("d/m/Y",$row4['topic_time']);
-						$view_topic_link[$n4]   		= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row4['forum_id'] . "&amp;t=" . $row4['topic_id']);
-						$view_topic_title[$n4]			= $row4['topic_title'];
-						$view_topic_title_short[$n4]  		= $topic_title4;	
-						$view_topic_forum[$n4]  		= $row4['forum_name'];		
-						$view_topic_author[$n4] 		= $row4['topic_first_poster_name'];
-						$view_topic_views[$n4]  		= $row4['topic_views'];
+						$view_topic_time[$n4]  		= date("d/m/Y",$row4['topic_time']);
+						$view_topic_link[$n4]   	= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row4['forum_id'] . "&amp;t=" . $row4['topic_id']);
+						$view_topic_title[$n4]		= $row4['topic_title'];
+						$view_topic_title_short[$n4]  	= $topic_title4;	
+						$view_topic_forum[$n4]  	= $row4['forum_name'];		
+						$view_topic_author[$n4] 	= $row4['topic_first_poster_name'];
+						$view_topic_views[$n4]  	= $row4['topic_views'];
 						
 						// assegna le variabili da passare al file HTML
 						$this->template->assign_block_vars('topten4_list', array(
-						'VIEW_TOPIC_DATA'			=> $view_topic_time[$n4],
-						'VIEW_TOPIC_LINK'			=> $view_topic_link[$n4],
-						'VIEW_TOPIC_TITLE'			=> $view_topic_title[$n4],
-						'VIEW_TOPIC_TITLE_SHORT'		=> $view_topic_title_short[$n4],
-						'VIEW_TOPIC_FORUM'			=> $view_topic_forum[$n4],
-						'VIEW_TOPIC_AUTHOR'			=> $view_topic_author[$n4],
-						'VIEW_TOPIC_VIEWS'			=> $view_topic_views[$n4],
-						'VIEW_TOPIC_BG'				=> $bg4 ,
+						'VIEW_TOPIC_DATA'		=> $view_topic_time[$n4],
+						'VIEW_TOPIC_LINK'		=> $view_topic_link[$n4],
+						'VIEW_TOPIC_TITLE'		=> $view_topic_title[$n4],
+						'VIEW_TOPIC_TITLE_SHORT'	=> $view_topic_title_short[$n4],
+						'VIEW_TOPIC_FORUM'		=> $view_topic_forum[$n4],
+						'VIEW_TOPIC_AUTHOR'		=> $view_topic_author[$n4],
+						'VIEW_TOPIC_VIEWS'		=> $view_topic_views[$n4],
+						'VIEW_TOPIC_BG'			=> $bg4 ,
 						));
 						if ($bg4 == "bg1" ){
 							$bg4 = "bg2" ;
