@@ -1,7 +1,7 @@
 lastpictures
 ============
 
-extension of old Mod Last Pictures by Micogian: 
+extension of old Mod Last Pictures and Toptentopis by Micogian: 
 1) view on index the latest pictures attached
 2) List of last topics
 3) List of last posts
