@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "Aggiunge nell'indice del Forum una striscia fotografica degli ultimi allegati e le liste degli ultimi topics, gli ultimi posts e i topics più visti.",
     "homepage": "http://www.floraitaliae.actaplantarum.org/",
-    "version": "1.0.1",
-    "time": "2017-05-31",
+    "version": "1.0.2",
+    "time": "2017-12-16",
     "license": "GPL-2.0",
     "authors": [
         {
@@ -15,13 +15,13 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
+        "php": ">=5.4",
         "composer/installers": "~1.0"
     },
     "extra": {
         "display-name": "Last Pictures & Topics",
         "soft-require": {
-             "phpbb/phpbb": "3.1.*@dev"
+             "phpbb/phpbb": "3.2.*@dev"
         }
     }
 }
