@@ -30,17 +30,11 @@ ul.toptenlist dd {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-ul.toptenlist {
-	display: block;
-	list-style-type: none;
-	margin: 0;
-}
 .nav-pictures > a{
 	display: inline-block;
 	margin: 0; 
 	font-size: 1em;
 	position: relative;
-	/*width: 50px;*/
 	line-height: 1em;
 	text-decoration: none;
 }
@@ -58,17 +52,17 @@ ul.toptenlist {
 	color: #FF0000 !important;
 	text-decoration: none;
 }
-ul.linklist li.responsive-menu a.responsive-menu-link1:before {
-	border-color: #FFFFFF; /*#105289;*/
+ul.linklist1 li.responsive-menu1 a.responsive-menu-link1:before {
+	border-color: #FFFFFF;
 }
-ul.linklist li.responsive-menu a.responsive-menu-link1:hover:before, ul.linklist li.responsive-menu.visible a.responsive-menu-link1:before {
+ul.linklist1 li.responsive-menu1 a.responsive-menu-link1:hover:before, ul.linklist1 li.responsive-menu.visible a.responsive-menu-link1:before {
 	border-color: #D31141;
 }
 .lastpictures-box{
 	display: inline-block;
 	width: 100%;
 }
-ul.linklist li.responsive-menu a.responsive-menu-link{
+ul.linklist1 li.responsive-menu1 a.responsive-menu-link1{
 	display: inline-block;
 	margin: 0;
 	width: 50px;
@@ -76,25 +70,25 @@ ul.linklist li.responsive-menu a.responsive-menu-link{
 	text-decoration: none;
 }
 
-ul.linklist li.responsive-menu a.responsive-menu-link:before {
+ul.linklist1 li.responsive-menu1 a.responsive-menu-link1:before {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 4px;
 	height: .15em;
-	width: 16px;
+	width: 15px;
 	border-bottom: 0.25em solid transparent;
 	border-top: 0.60em double transparent;
+}
 
-ul.linklist > li {
+ul.linklist1 > li {
 	float: left;
 	font-size: 1.1em;
 	line-height: 1.3em;
 	list-style-type: none;
-	padding-top: 1px;
 	width: auto;
 }
-ul.toptenlist l{
+ul.toptenlist {
 	list-style-type: none;
 }
 @media only screen and (max-width: 915px), only screen and (max-device-width: 915px)
