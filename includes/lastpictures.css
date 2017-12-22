@@ -91,7 +91,7 @@ ul.linklist1 > li {
 ul.toptenlist {
 	list-style-type: none;
 }
-@media only screen and (max-width: 915px), only screen and (max-device-width: 915px)
+@media only screen and (max-width: 615px), only screen and (max-device-width: 615px)
 {
 	.lastpictures-box{
 		display: none;
