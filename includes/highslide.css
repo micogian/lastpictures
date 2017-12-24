@@ -888,3 +888,19 @@ html>/**/body .highslide-gallery ul img {
 .highslide-thumbstrip-float .highslide-marker {
 	display: none;
 }
+/*********************************************/
+/* Impostazioni colore prosilver standard    */
+/*********************************************/
+.highslide-caption  a{
+	color: #1109ed;
+}
+.highslide-caption  a:hover{
+	color: #FF0000;
+}
+.highslide-caption span{
+	color: #1109ed;
+}
+.highslide-heading  span{
+	color: #1109ed;
+}
+/* Fine Impostazioni colore prosilver standard */
