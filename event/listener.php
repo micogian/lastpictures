@@ -26,9 +26,17 @@ class listener implements EventSubscriberInterface
 	{		
 		return array('core.user_setup' => 'setup',);	
 	}
-	
+
 	public function setup($event)	
 	{
+		//file di lingua
+		$lang_set_ext = $event['lang_set_ext'];
+		$lang_set_ext[] = array(
+			'ext_name' => 'micogian/lastpictures',
+			'lang_set' => 'common',
+		);
+		$event['lang_set_ext'] = $lang_set_ext;
+		//lingua end
 		/**
 		* SELEZIONE MODE
 		*/
@@ -37,6 +45,8 @@ class listener implements EventSubscriberInterface
 		* LISTA FORUMS DA ELABORARE
 		*/
 		include($this->root_path . "/ext/micogian/lastpictures/includes/lastpictures_var.php");
+		
+
 
 		if ($mode_cor == 1 || $mode_cor == '')
 		{
@@ -152,13 +162,13 @@ class listener implements EventSubscriberInterface
 						
 						// assegna le variabili da passare al file HTML
 						$this->template->assign_block_vars('topten2_list', array(
-							'LAST_TOPIC_LINK'		=> $last_topic_link[$n2],
-							'LAST_TOPIC_TITLE'		=> $last_topic_title[$n2],
+							'LAST_TOPIC_LINK'			=> $last_topic_link[$n2],
+							'LAST_TOPIC_TITLE'			=> $last_topic_title[$n2],
 							'LAST_TOPIC_TITLE_SHORT'	=> $last_topic_title_short[$n2],
-							'LAST_TOPIC_FORUM'		=> $last_topic_forum[$n2],
-							'LAST_TOPIC_AUTHOR'		=> $last_topic_author[$n2],
-							'LAST_TOPIC_DATA'		=> $last_topic_data[$n2],
-							'LAST_TOPIC_BG'			=> $bg2 ,
+							'LAST_TOPIC_FORUM'			=> $last_topic_forum[$n2],
+							'LAST_TOPIC_AUTHOR'			=> $last_topic_author[$n2],
+							'LAST_TOPIC_DATA'			=> $last_topic_data[$n2],
+							'LAST_TOPIC_BG'				=> $bg2 ,
 						));
 						if ($bg2 == "bg1" ){
 							$bg2 = "bg2" ;
@@ -247,26 +257,26 @@ class listener implements EventSubscriberInterface
 			$data_3 	= ($data_cor - 7905600) ;  // timestamp di 182 giorni fa
 			$data_6 	= ($data_cor - 15811200) ;  // timestamp di 182 giorni fa
 			$data_12 	= ($data_cor - 31536000) ; // timestamp di 365 giorni fa
-			$data_views = request_var('sel_views','5') ; // opzione selezionata
+			$data_views = request_var('sel_views','0') ; // opzione selezionata
 			//timestamp selected
 			$this->template->assign_var('TIME_SELECTED', $data_views);
-			if ($data_views == '5') // Tutto
+			if ($data_views == '0') // Tutto
 			{
 				$data_ini = '0' ;
 			}
-			if ($data_views == '4') // 12 mesi
+			if ($data_views == '1') // 12 mesi
 			{
 				$data_ini = $data_cor - 31536000  ;
 			}
-			if ($data_views == '3' ) // 6 mesi
+			if ($data_views == '2' ) // 6 mesi
 			{
 				$data_ini = $data_cor - 15811200 ;
 			}
-			if ($data_views == '2') // 3 mesi
+			if ($data_views == '3') // 3 mesi
 			{
 				$data_ini = $data_cor - 7905600 ;
 			}
-			if ($data_views == '1') // 1 mese
+			if ($data_views == '4') // 1 mese
 			{
 				$data_ini = $data_cor -  2635200;
 			}
@@ -294,24 +304,24 @@ class listener implements EventSubscriberInterface
 						}else{
 							$topic_title4 = $row4['topic_title'];
 						}
-						$view_topic_time[$n4]  		= date("d/m/Y",$row4['topic_time']);
-						$view_topic_link[$n4]   	= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row4['forum_id'] . "&amp;t=" . $row4['topic_id']);
-						$view_topic_title[$n4]		= $row4['topic_title'];
+						$view_topic_time[$n4]  			= date("d/m/Y",$row4['topic_time']);
+						$view_topic_link[$n4]   		= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row4['forum_id'] . "&amp;t=" . $row4['topic_id']);
+						$view_topic_title[$n4]			= $row4['topic_title'];
 						$view_topic_title_short[$n4]  	= $topic_title4;	
-						$view_topic_forum[$n4]  	= $row4['forum_name'];		
-						$view_topic_author[$n4] 	= $row4['topic_first_poster_name'];
-						$view_topic_views[$n4]  	= $row4['topic_views'];
+						$view_topic_forum[$n4]  		= $row4['forum_name'];		
+						$view_topic_author[$n4] 		= $row4['topic_first_poster_name'];
+						$view_topic_views[$n4]  		= $row4['topic_views'];
 						
 						// assegna le variabili da passare al file HTML
 						$this->template->assign_block_vars('topten4_list', array(
-						'VIEW_TOPIC_DATA'		=> $view_topic_time[$n4],
-						'VIEW_TOPIC_LINK'		=> $view_topic_link[$n4],
-						'VIEW_TOPIC_TITLE'		=> $view_topic_title[$n4],
-						'VIEW_TOPIC_TITLE_SHORT'	=> $view_topic_title_short[$n4],
-						'VIEW_TOPIC_FORUM'		=> $view_topic_forum[$n4],
-						'VIEW_TOPIC_AUTHOR'		=> $view_topic_author[$n4],
-						'VIEW_TOPIC_VIEWS'		=> $view_topic_views[$n4],
-						'VIEW_TOPIC_BG'			=> $bg4 ,
+						'VIEW_TOPIC_DATA'				=> $view_topic_time[$n4],
+						'VIEW_TOPIC_LINK'				=> $view_topic_link[$n4],
+						'VIEW_TOPIC_TITLE'				=> $view_topic_title[$n4],
+						'VIEW_TOPIC_TITLE_SHORT'		=> $view_topic_title_short[$n4],
+						'VIEW_TOPIC_FORUM'				=> $view_topic_forum[$n4],
+						'VIEW_TOPIC_AUTHOR'				=> $view_topic_author[$n4],
+						'VIEW_TOPIC_VIEWS'				=> $view_topic_views[$n4],
+						'VIEW_TOPIC_BG'					=> $bg4 ,
 						));
 						if ($bg4 == "bg1" ){
 							$bg4 = "bg2" ;
@@ -327,7 +337,7 @@ class listener implements EventSubscriberInterface
 			//---------- Top view Tocics end -----------//
 			$this->template->assign_vars(array(
 			'TOPTEN_MODE' 		=> $mode_cor,
-			'TOPTEN_TITLE' 		=> "Topics più visti",
+			'TOPTEN_TITLE' 		=> "Topics pi&ugrave; visti",
 			));
 		}
 	}
