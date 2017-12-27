@@ -39,8 +39,8 @@ $lang = array_merge($lang, array(
 	'LIST2_FORUM'			=> 'nome forum',
 	'LIST2_VIEWS'			=> 'visite',
 	'LIST2_AUTHOR'			=> 'autore',
-	'LIST2_IN'				=> 'in',
-	'LIST2_BY'				=> 'di',
+	'LIST2_IN'			=> 'in',
+	'LIST2_BY'			=> 'di',
 	)
 );
 ?>
