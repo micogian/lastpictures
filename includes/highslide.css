@@ -51,8 +51,21 @@
 	display: none;
 	font-size: 1em;
 	padding: 5px;
-	/*background: white;*/
 }
+/* Impostazioni colore prosilver standard */
+.highslide-caption  a{
+	color: #1109ed;
+}
+.highslide-caption  a:hover{
+	color: #FF0000;
+}
+.highslide-caption span{
+	color: #1109ed;
+}
+.highslide-heading  span{
+	color: #1109ed;
+}
+/* Fine Impostazioni colore prosilver standard */
 .highslide-heading {
 	display: none;
 	font-weight: bold;
@@ -513,7 +526,7 @@ html>/**/body .highslide-gallery ul img {
 
 /* hs.wrapperClassName = 'controls-in-heading' */
 .controls-in-heading .highslide-heading {
-	color: gray;
+	color: #1109ed; /*gray;*/
 	font-weight: bold;
 	height: 20px;
 	overflow: hidden;
@@ -888,19 +901,3 @@ html>/**/body .highslide-gallery ul img {
 .highslide-thumbstrip-float .highslide-marker {
 	display: none;
 }
-/*********************************************/
-/* Impostazioni colore prosilver standard    */
-/*********************************************/
-.highslide-caption  a{
-	color: #1109ed;
-}
-.highslide-caption  a:hover{
-	color: #FF0000;
-}
-.highslide-caption span{
-	color: #1109ed;
-}
-.highslide-heading  span{
-	color: #1109ed;
-}
-/* Fine Impostazioni colore prosilver standard */

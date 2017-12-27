@@ -1,7 +1,7 @@
 .jcarousel-wrapper {
-    margin: 5px auto ; /*20px auto;*/
+    margin: 5px ; /*5px auto ; 20px auto;*/
     position: relative;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -65,11 +65,11 @@
 }
 
 .jcarousel-control-prev {
-    left: 15px;
+    left: 5px;
 }
 
 .jcarousel-control-next {
-    right: 15px;
+    right: 5px;
 }
 
 /** Carousel Pagination **/

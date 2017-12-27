@@ -19,7 +19,7 @@ ul.toptenlist dt, ul.toptenlist dd {
 	float: left;
 }
 ul.toptenlist dt {
-	width: 100%;
+	width: 99%;
 	margin-right: -440px;
 	font-size: 1.1em;
 }
