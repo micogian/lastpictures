@@ -149,9 +149,9 @@ class listener implements EventSubscriberInterface
 					{
 						if (strlen($row2['topic_title']) > 28)
 						{
-							$topic_title1 = substr($row2['topic_title'],0,27) . "...";
+							$topic_title2 = substr($row2['topic_title'],0,27) . "...";
 						}else{
-							$topic_title1 = $row2['topic_title'];
+							$topic_title2 = $row2['topic_title'];
 						}
 						$last_topic_link[$n2]   	= append_sid("{$this->root_path}viewtopic.{$this->phpEx}", "f=" . $row2['forum_id'] . "&amp;t=" . $row2['topic_id']);
 						$last_topic_title[$n2]  	= $row2['topic_title'];
