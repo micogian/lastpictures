@@ -26,7 +26,7 @@ $lang = array_merge($lang, array(
 	'LIST_TITLE_4'			=> 'I Topics pi&ugrave; visti',
 	'LIST_OPTIONS'			=> 'Opzioni',
 	'SELECT_TIME_0'			=> 'Tutto',
-	'SELECT_TIME_1'			=> 'Ultim1 12 mesi',
+	'SELECT_TIME_1'			=> 'Ultimi 12 mesi',
 	'SELECT_TIME_2'			=> 'Ultimi 6 mesi',
 	'SELECT_TIME_3'			=> 'Ultimi 3 mesi',
 	'SELECT_TIME_4'			=> 'Ultimo mese',	
@@ -39,8 +39,8 @@ $lang = array_merge($lang, array(
 	'LIST2_FORUM'			=> 'nome forum',
 	'LIST2_VIEWS'			=> 'visite',
 	'LIST2_AUTHOR'			=> 'autore',
-	'LIST2_IN'			=> 'in',
-	'LIST2_BY'			=> 'di',
+	'LIST2_IN'				=> 'in',
+	'LIST2_BY'				=> 'di',
 	)
 );
 ?>
