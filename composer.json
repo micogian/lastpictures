@@ -1,10 +1,10 @@
 {
     "name": "micogian/lastpictures",
     "type": "phpbb-extension",
-    "description": "Aggiunge nell'indice del Forum una striscia fotografica degli ultimi allegati e le liste degli ultimi topics, gli ultimi posts e i topics più visti.",
+    "description": "Aggiunge nell'indice del Forum una striscia fotografica con gli ultimi allegati e con opzione di visualizzare le liste degli ultimi topics, gli ultimi posts e i topics più visti.",
     "homepage": "http://www.floraitaliae.actaplantarum.org/",
-    "version": "1.0.2",
-    "time": "2017-12-16",
+    "version": "1.0.3",
+    "time": "2018-01-15",
     "license": "GPL-2.0",
     "authors": [
         {
