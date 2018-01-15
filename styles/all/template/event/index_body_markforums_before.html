@@ -5,18 +5,18 @@
 				<li class="header">
 					<dl>						
 						<!-- IF TOPTEN_MODE == 1 -->
-						<dt style="float: left;">{L_LIST_TITLE_1}</dt>
+						<div class="lastpictures-title">{L_LIST_TITLE_1}</div>
 						<!-- ELSEIF TOPTEN_MODE == 2 -->
-						<dt style="float: left;">{L_LIST_TITLE_2}</dt>
+						<div class="lastpictures-title">{L_LIST_TITLE_2}</div>
 						<!-- ELSEIF TOPTEN_MODE == 3 -->
-						<dt style="float: left;">{L_LIST_TITLE_3}</dt>
+						<div class="lastpictures-title">{L_LIST_TITLE_3}</div>
 						<!-- ELSEIF TOPTEN_MODE == 4 -->
-						<dt style="float: left;">{L_LIST_TITLE_4}</dt>
-						<dd style="float: left;"> 
+						<div class="lastpictures-title">{L_LIST_TITLE_4}</div>
+						<div style="float: left;"> 
 						<form action="index.php?mode=4" method="post">
-							<div>
-								&nbsp;{L_SELECT_TEXT}&nbsp;&nbsp;&nbsp;&nbsp;						
-								<select style="font: 10px Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; background: #859D90; width: 150px;" name="sel_views" onchange='this.form.submit()'>
+							<div id="select-text" class="select-text">
+								<span>{L_SELECT_TEXT}</span>
+								<select class="select_options" name="sel_views" onchange='this.form.submit()'>
 								<!-- IF TIME_SELECTED == 1 --><option value='0' selected="selected"><!-- ELSE --><option value='0'><!-- ENDIF -->{L_SELECT_TIME_0}</option>
 								<!-- IF TIME_SELECTED == 2 --><option value='1' selected="selected"><!-- ELSE --><option value='1'><!-- ENDIF -->{L_SELECT_TIME_1}</option>
 								<!-- IF TIME_SELECTED == 3 --><option value='2' selected="selected"><!-- ELSE --><option value='2'><!-- ENDIF -->{L_SELECT_TIME_2}</option>
@@ -25,7 +25,7 @@
 								</select>
 							</div>
 						</form>
-						</dd>
+						</div>
 						<!-- ENDIF -->
 						<dd style="float: right; margin-top: 0;">
 							<div class="nav-pictures" role="navigation">
