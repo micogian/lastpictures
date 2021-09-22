@@ -77,7 +77,6 @@ class listener implements EventSubscriberInterface
 			AND pa.extension = 'jpg'
 			AND pt.topic_moved_id = 0
 			AND pt.topic_attachment = 1
-			AND pa.extension = 'jpg'
 			ORDER BY pt.topic_time DESC LIMIT $n_top";
 			$result = $this->db->sql_query($sql);
 			$topic_cor = '' ;
