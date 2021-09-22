@@ -2,11 +2,11 @@ services:
     micogian.lastpictures.listener:
         class: micogian\lastpictures\event\listener
         arguments:
-            - @dbal.conn
-            - @template
-            - @auth
-            - @user
-            - %core.root_path%
-            - %core.php_ext%
+            - '@dbal.conn'
+            - '@template'
+            - '@auth'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
         tags:
             - { name: event.listener }
