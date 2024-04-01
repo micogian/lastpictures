@@ -62,6 +62,7 @@ class listener implements EventSubscriberInterface
                       // è necessario aumentare il numero dei Topics elaborati per ottenere il numero di immagini da visualizzare
 	  
 			//QUERY PER ESTRARRE GLI ULTIMI ALLEGATI
+			<!--
 			$sql = "SELECT
 			pf.forum_name, pf.parent_id, pf.forum_id,
 			pt.topic_id, pt.forum_id, pt.topic_title, pt.topic_poster, pt.topic_first_poster_name, pt.topic_attachment, pt.topic_moved_id, pt.topic_time,pt.topic_first_poster_colour,
@@ -78,7 +79,13 @@ class listener implements EventSubscriberInterface
 			AND pt.topic_moved_id = 0
 			AND pt.topic_attachment = 1
 			ORDER BY pt.topic_time DESC LIMIT $n_top";
-			$result = $this->db->sql_query($sql);
+			-->
+			$sql = "SELECT pa.attach_id, pf.forum_name, pf.forum_id, pt.topic_id, pt.topic_title, pt.topic_poster, pt.topic_first_poster_name, pt.topic_first_poster_colour 
+                        FROM ". FORUMS_TABLE." pf LEFT JOIN ". TOPICS_TABLE. " pt ON pf.forum_id = pt.forum_id LEFT JOIN ". POSTS_TABLE. " pp ON pt.topic_first_post_id = pp.post_id LEFT JOIN ". ATTACHMENTS_TABLE. " pa ON pp.post_id = pa.post_msg_id 
+                        WHERE pt.forum_id IN (".$list_attach.") AND pt.topic_attachment = 1 AND SUBSTRING(pa.mimetype, 1,5) = 'image' 
+                        ORDER BY pt.topic_time DESC LIMIT $n_top";	
+			$result = $this->db->sql_query($sql);-->
+			
 			$topic_cor = '' ;
 			$x = '0' ;
 			while ($row = $this->db->sql_fetchrow($result))
