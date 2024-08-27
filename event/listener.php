@@ -70,7 +70,7 @@ class listener implements EventSubscriberInterface
         if ($topic_cor != $row['topic_id'] && $x < $n_pic ) 
         {
           $attach_id = $row['attach_id'];
-          $physical = $row['physical_filename'];
+          //$physical = $row['physical_filename'];
           // CONTROLLO LUNGHEZZA TOPIC_TITLE
           if(strlen($row['topic_title']) > 18)
           {
